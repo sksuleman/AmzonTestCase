@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Amazon">
+
+    <listeners>
+    <listener class-name="com.amazon.utilities.Reporting"/>
+    
+    
+    </listeners>
+     <test name ="Amazon Test">
+     <parameter name="browser"  value="chrome"/>
+     <classes>
+     <class name ="com.amazon.testCases.TC_HomePageTest_001"/> 
+       <!--  class name ="com.amazon.testCases.TC_LoginDDT_002"/>-->
+     </classes>
+     
+     </test>
+ </suite>
+

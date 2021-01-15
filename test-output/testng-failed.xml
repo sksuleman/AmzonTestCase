@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.amazon.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Amazon Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.amazon.testCases.TC_HomePageTest_001">
+        <methods>
+          <include name="homeTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.testCases.TC_HomePageTest_001 -->
+    </classes>
+  </test> <!-- Amazon Test(failed) -->
+</suite> <!-- Failed suite [Amazon] -->
